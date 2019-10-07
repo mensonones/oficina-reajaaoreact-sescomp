@@ -13,12 +13,6 @@ class App extends React.Component {
         this.setState({ count: this.state.count + 1 });
     }
 
-    componentDidUpdate(prevProps, prevState) {
-        if (prevState.nome !== this.state.nome) {
-            this.setState({ nome: "Atualizando" });
-        }
-    }
-
     render() {
         return (
             <React.Fragment>

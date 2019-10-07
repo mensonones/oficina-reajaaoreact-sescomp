@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../styles/App.css";
-
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -20,15 +18,17 @@ class App extends React.Component {
         return (
             <React.Fragment>
                 <h1>Repositórios</h1>
-                {
+                
+                <ul>
+                    {
                     this.state.repos.map((dados) => {
                         return (
-                            <ul key={dados.id}>
-                                <li>{dados.name} </li>
-                            </ul>
+                            
+                            <li key={dados.id}>{dados.name} </li>
                         )
                     })
                 }
+                </ul>
             </React.Fragment>
         );
     }

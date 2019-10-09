@@ -1,30 +1,14 @@
 import React from 'react';
-
-const ExContext = React.createContext();
+import UseContext from "./UseContext";
+import Button from "./Button";
 
 class App extends React.Component {
     render() {
         return (
-            <ExContext.Provider value="10">
-                <Msg />
-            </ExContext.Provider>
+            <UseContext>
+                <Button></Button>
+            </UseContext>
         );
-    }
-}
-
-function Msg() {
-    return (
-        <React.Fragment>
-            <Mensagem />
-        </React.Fragment>
-    );
-}
-
-class Mensagem extends React.Component {
-
-    static contextType = ExContext;
-    render() {
-        return <p>{this.context}</p>
     }
 }
 

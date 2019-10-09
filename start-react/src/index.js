@@ -9,4 +9,4 @@ import Evento from "./components/Eventos/Evento";
 import AppContext from "./components/Context/App";
 import Fetch from "./components/ConsumeAPI/Fetch";
 
-ReactDOM.render(<Hooks/>, document.getElementById("root"));
+ReactDOM.render(<AppContext/>, document.getElementById("root"));
